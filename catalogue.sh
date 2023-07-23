@@ -1,5 +1,5 @@
 cp catalogue.service /etc/systemd/system/catalogue.service
-cp mongo.repo /etc/yum.repo.d/mongo.repo
+cp mongodb.repo /etc/yum.repo.d/mongodb.repo
 
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash
 yum install nodejs -y

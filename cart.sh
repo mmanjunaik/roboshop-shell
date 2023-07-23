@@ -1,4 +1,4 @@
-cp user.cart /etc/systemd/system/user.cart
+cp cart.service /etc/systemd/system/cart.service
 
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash
 yum install nodejs -y
