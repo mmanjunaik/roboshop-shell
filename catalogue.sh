@@ -3,7 +3,7 @@ echo -e "\e[36m>>>>>>>>>>>>>>> create catalogue.service  <<<<<<<<<<<<<\e[0m"
 cp catalogue.service /etc/systemd/system/catalogue.service
 
 echo -e "\e[36m>>>>>>>>>>>>>>> create mongodb.repo <<<<<<<<<<<<<\e[0m"
-cp mongodb.repo /etc/yum.repos.d/mongo.repo
+cp mongodb.repo /etc/yum.repos.d/mongodb.repo
 
 echo -e "\e[36m>>>>>>>>>>>>>>> install nodejs repos <<<<<<<<<<<<<\e[0m"
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash
