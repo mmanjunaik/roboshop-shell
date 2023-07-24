@@ -1,5 +1,5 @@
 cp catalogue.service /etc/systemd/system/catalogue.service
-cp mongodb.repo /etc/yum.repo.d/mongodb.repo
+cp mongodb.repo /etc/yum.repos.d/mongo.repo
 
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash
 yum install nodejs -y
@@ -12,6 +12,7 @@ cd /app
 npm install
 
 yum install mongodb-org-shell -y
+
 mongo --host mongodb.mmanjunaik,online </app/schema/catalogue.js
 
 systemctl daemon-reload
