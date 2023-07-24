@@ -13,7 +13,7 @@ npm install
 
 yum install mongodb-org-shell -y
 
-mongo --host mongodb.mmanjunaik,online </app/schema/catalogue.js
+mongo --host mongodb-mmanjunaik,online </app/schema/catalogue.js
 
 systemctl daemon-reload
 systemctl enable catalogue
