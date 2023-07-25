@@ -38,7 +38,7 @@ yum install mongodb-org-shell -y
 echo -e "\e[36m>>>>>>>>>>>>>>> load catalogue schema <<<<<<<<<<<<<\e[0m"
 #mongo --host mongodb-mmanjunaik.online /app/schema/catalogue.js
 
-echo -e "\e[36m>>>>>>>>>>>>>>> restart catalogue service <<<<<<<<<<<<<\e[0m"
+echo -e "\e[36m>>>>>>>>>>>>>>> start catalogue service <<<<<<<<<<<<<\e[0m"
 systemctl daemon-reload
 systemctl enable catalogue
-systemctl start catalogue
+systemctl restart catalogue
