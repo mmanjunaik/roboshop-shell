@@ -24,6 +24,7 @@ echo -e "\e[36m>>>>>>>>>>>>>>> download application content <<<<<<<<<<<<<\e[0m"
 curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue.zip
 
 echo -e "\e[36m>>>>>>>>>>>>>>> extract application content <<<<<<<<<<<<<\e[0m"
+cd /app
 unzip /tmp/catalogue.zip
 cd /app
 
