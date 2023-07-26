@@ -12,7 +12,7 @@ echo -e "\e[36m>>>>>>>>>>>>>>> install nodejs <<<<<<<<<<<<<\e[0m"
 yum install nodejs -y &>/tmp/roboshop.log
 
 echo -e "\e[36m >>>>>>>>>>>>>>> create application user <<<<<<<<<<<<<\e[0m "
-useradd roboshop
+useradd roboshop &>>/tmp/roboshop.log
 
 echo -e "\e[36m>>>>>>>>>>>>>>> create application directory <<<<<<<<<<<<<\e[0m"
 rm -rf /app
