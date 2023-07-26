@@ -9,10 +9,10 @@ echo -e "\e[36m>>>>>>>>>>>>>>> install nodejs repos <<<<<<<<<<<<<\e[0m"
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash
 
 echo -e "\e[36m>>>>>>>>>>>>>>> install nodejs <<<<<<<<<<<<<\e[0m"
-yum install nodejs -y &>/tmp/roboshop.log
+yum install nodejs -y
 
 echo -e "\e[36m >>>>>>>>>>>>>>> create application user <<<<<<<<<<<<<\e[0m "
-useradd roboshop &>>/tmp/roboshop.log
+useradd roboshop
 
 echo -e "\e[36m>>>>>>>>>>>>>>> create application directory <<<<<<<<<<<<<\e[0m"
 rm -rf /app
